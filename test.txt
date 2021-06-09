@@ -1,0 +1,10 @@
+CONTRACT tradeCoins(Player player1, Player player2, int coins)
+{
+	IF(player1.coins > coins)
+		{
+			player1.coins-=coins;
+			player2.coins+=coins;
+			return true;
+		}
+	return false;
+}
